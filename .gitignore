@@ -1,0 +1,12 @@
+node_modules/
+dist/
+build/
+target/
+.idea/
+.vscode/
+*.class
+*.log
+.DS_Store
+.env
+commit_log.txt
+out/
