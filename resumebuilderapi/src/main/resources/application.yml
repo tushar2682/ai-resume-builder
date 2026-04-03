@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: resumebuilderapi
+  data:
+    mongodb:
+      uri: ${MONGODB_URI:mongodb://localhost:27017/resumebuilder}
+  ai:
+    openai:
+      api-key: ${OPENAI_API_KEY}
+      chat:
+        options:
+          model: gpt-4o
+          temperature: 0.7
+
+razorpay:
+  key-id: ${RAZORPAY_KEY_ID}
+  key-secret: ${RAZORPAY_KEY_SECRET}
+
+server:
+  port: 8081
+
+logging:
+  level:
+    org.springframework.ai: DEBUG
+    tushar.resumebuilderapi: DEBUG
